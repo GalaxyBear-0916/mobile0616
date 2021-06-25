@@ -1,17 +1,167 @@
-<ion-header [translucent]="true">
+<!--Head-->
+<ion-header [translucent]="true" >
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      我的
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!--Content-->
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div style="background-color: #e6e6e6;">
+    <!--信息-->
+  <div class="icon" style="background-color: #e6e6e6;height: 140px">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.staticfile.org/ionicons/2.0.1/css/ionicons.min.css">
+    <ion-icon name="balloon-outline"></ion-icon>
+    <ion-icon name="bicycle-outline"></ion-icon>
+    <ion-icon name="heart-half-outline"></ion-icon>
+    <br>
+    <!--头像-->
+      <img
+        class="imgHead" src="https://img2.baidu.com/it/u=3717120934,3932520698&fm=26&fmt=auto&gp=0.jpg"draggable="false"style="width: 83px;height: 83px;margin-right: 10px;margin-left: 15px;">
+      <!--姓名-->
+    <div style="float: right;margin-top: 20px">
+      <span style="font-family:PingFangSC; font-weight:700; font-size:21px; color:rgb(16, 16, 16); font-style:normal; letter-spacing:0px; line-height:30px; text-decoration:none;">可爱碑海北</span>
+      <br>
+      <span style="font-family:PingFangSC; font-weight:400; font-size:12px; color:rgb(150, 150, 150); font-style:normal; letter-spacing:0px; line-height:18px; text-decoration:none;">会员已到期，特权已失效</span>
+      <!--充值-->
+        <div style="width: 55px; height: 25px; margin-top:5px; background-color: rgb(237, 69, 108); border-width: 0px;  border-radius: 27px; font-size: 14px; padding: 0px; text-align: center; line-height: 20px; font-weight: normal; font-style: normal;color: white;line-height: 26px;white-space: nowrap;">
+          充值
+        </div>
+    </div>
+  </div>
+    <br>
+    <!--钱包-->
+  <div style="width:93%;height:93%;margin: 0 auto;background-color: white;border-radius: 15px">
+    <div class="box2">
+      <div class="box3">
+        <span class="span1">123</span>
+        <br><span class="span2">点券</span>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="box3">
+        <span class="span1">123</span>
+        <br><span class="span2">粉丝</span>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="box3">
+        <span class="span1">16</span>
+        <br><span class="span2">圈子</span>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="box3">
+        <span class="span1">56</span>
+        <br><span class="span2">关注</span>
+      </div>
+    </div>
+  </div>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <!--收听历史-->
+  <div style="margin: 10px 10px 10px 10px;width:94%;height:94%;">
+    <!--标题-->
+      <span style="font-size: 15px;"><b>收听历史</b></span>
+      <span style="float: right;">更多</span>
+    <br>
+    <div class="box">
+      <div class="box1">
+        <img src="https://img0.baidu.com/it/u=1256871257,3654759602&fm=26&fmt=auto&gp=0.jpg" alt="">
+      </div>
+      <div class="box1">
+        <img src="http://static.zongheng.com/upload/cover/0e/3b/0e3bdd8b85b6b769910755c296929c3a1617171102669.jpeg" alt="">
+      </div>
+      <div class="box1">
+        <img src="http://static.zongheng.com/upload/cover/ad/d7/add75e0c8566ae25729aa9ea41b8a8ef.jpeg" alt="">
+      </div>
+      <div class="box1">
+        <img src="http://static.zongheng.com/upload/cover/f8/51/f8518a2f387efe16a32862ec166e564a.jpeg" alt="">
+      </div>
+      <div class="box1">
+        <img src="http://static.zongheng.com/upload/cover/2017/05/1496234539057.JPG" alt="">
+      </div>
+      <div class="box1">
+        <img src="https://img2.baidu.com/it/u=929018918,3427263550&fm=26&fmt=auto&gp=0.jpg" alt="">
+      </div>
+      <div class="box1">
+        <img src="http://static.zongheng.com/upload/cover/0e/3b/0e3bdd8b85b6b769910755c296929c3a1617171102669.jpeg" alt="">
+      </div>
+      <div class="box1">
+        <img src="http://static.zongheng.com/upload/cover/f8/51/f8518a2f387efe16a32862ec166e564a.jpeg" alt="">
+      </div>
+      <div class="box1">
+        <img src="https://img0.baidu.com/it/u=1256871257,3654759602&fm=26&fmt=auto&gp=0.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+    <!--设置-->
+    <span style="font-size: 15px;margin-left: 10px;"><b>设置</b></span>
+    <div style="width:93%;height:93%;margin: 0 auto;background-color: white;border-radius: 15px;margin-bottom: 20px">
+      <div class="box4">
+          <div>
+            <div class="box5"><i class="icon ion-gear-a"></i></div>
+            <span class="span3">我的订阅</span>
+            <span style="margin-left:122px;font-family:PingFangSC; font-weight:400; font-size:12px;
+            color:rgb(150, 150, 150); font-style:normal;
+            letter-spacing:0px; line-height:18px; text-decoration:none;">
+              在书包里面欧 ></span>
+          </div>
+        </div>
+      <div class="box4">
+        <div>
+          <div class="box5"><i class="icon ion-briefcase"></i></div>
+          <span class="span3">掌上商城</span>
+          <span style="margin-left:110px;font-family:PingFangSC; font-weight:400; font-size:12px;
+            color:rgb(150, 150, 150); font-style:normal;
+            letter-spacing:0px; line-height:18px; text-decoration:none;">
+              超级秒杀降价日 ></span>
+        </div>
+      </div>
+      <div class="box4">
+        <div>
+          <div class="box5"><i class="icon ion-gear-a"></i></div>
+          <span class="span3">听书计划</span>
+          <span style="margin-left:74px;font-family:PingFangSC; font-weight:400; font-size:12px;
+            color:rgb(150, 150, 150); font-style:normal;
+            letter-spacing:0px; line-height:18px; text-decoration:none;">
+              制定一份你的听书计划 ></span>
+        </div>
+      </div>
+      <div class="box4">
+        <div>
+          <div class="box5"><i class="icon ion-gear-a"></i></div>
+          <span class="span3">我要赚钱</span>
+          <span style="margin-left:122px;font-family:PingFangSC; font-weight:400; font-size:12px;
+            color:rgb(150, 150, 150); font-style:normal;
+            letter-spacing:0px; line-height:18px; text-decoration:none;">
+              开启你的副业 ></span>
+        </div>
+      </div>
+      <div class="box4">
+        <div>
+          <div class="box5"><i class="icon ion-clipboard"></i></div>
+          <span class="span3">帮助与反馈</span>
+          <span style="margin-left:180px;font-family:PingFangSC; font-weight:400; font-size:12px;
+            color:rgb(150, 150, 150); font-style:normal;
+            letter-spacing:0px; line-height:18px; text-decoration:none;">
+               ></span>
+        </div>
+      </div>
+      <div class="box4">
+        <div>
+          <div class="box5"><i class="icon ion-gear-b"></i></div>
+          <span class="span3">设置</span>
+          <span style="margin-left:232px;font-family:PingFangSC; font-weight:400; font-size:12px;
+            color:rgb(150, 150, 150); font-style:normal;
+            letter-spacing:0px; line-height:18px; text-decoration:none;">
+               ></span>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
 </ion-content>

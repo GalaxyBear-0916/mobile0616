@@ -1,0 +1,208 @@
+//.flex-container {
+//  margin: 0 15px;
+//}
+.inline {
+  width: 80px !important;
+  margin: 9px 9px 9px 0;
+}
+.small {
+  height: 20px !important;
+  line-height: 20px !important;
+}
+.sub-title {
+  color: #888;
+  font-size: 14px;
+  padding: 40px 0 18px 0;
+  margin-top: 10px;
+}
+.placeholder {
+  background-color: #ebebef;
+  color: #bbb;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  margin-left: 8px;
+}
+.placeholder1 {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  margin-left: 8px;
+}
+.am-search {
+  border-bottom: 1px solid #ddd;
+}
+.sub-title {
+  color: #888;
+  font-size: 14px;
+  padding: 30px 0 18px 0;
+}
+.am-wingblank .am-wingblank-lg {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.am-wingblank {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.am-button {
+  display: block;
+  outline: 0 none;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  height: 47px;
+  line-height: 47px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 15px 15px 15px;
+}
+.icon ion-icon {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  float: right;
+}
+.iPhoneX-StatusBar {
+  display: flex;
+  justify-content: center;
+  padding: 0 14px;
+}
+.iPhoneX-StatusBar .StatusBarTime {
+  justify-content: center;
+  margin-right: auto;
+  margin-left: 7px;
+  width: 54px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.iPhoneX-StatusBar .StatusBarSignal {
+  margin-left: auto;
+}
+.iPhoneX-StatusBar .StatusBarSignal, .iPhoneX-StatusBar .StatusBarWifi {
+  margin-right: 0.4em;
+}
+.box{
+  background: white;
+  border-radius: 15px;
+  padding: 10px 0px 10px 0;
+  white-space: nowrap;/*文本不会换行，文本会在在同一行上继续*/
+  overflow-y:auto;/*可滑动*/
+}
+/*自定义滚动条的伪对象选择器, CSS 可以隐藏滚动条*/
+.box::-webkit-scrollbar{
+  display: none;
+}
+.box1{
+  width: 30px;
+  height: 14px;
+  margin-left: 14px;
+  font-weight: bold;
+  display: inline-block;/*行内块元素*/
+}
+.div1{
+  padding: 0 15px;
+}
+.div2{
+  margin-bottom: 5px;
+}
+.imgs{
+  height: 146px;
+  width: 109px;
+}
+.imgscenter{
+  text-align: center;
+}
+:host ::ng-deep .ng-star-inserted{
+  margin-right: 0;
+}
+:host ::ng-deep .am-card-header{
+  padding: 0;
+}
+.card{
+  width: 80px;margin-right:10px;padding-bottom: 0px;
+}
+.span1{
+  font-size: 19px;
+  font-weight: bold;
+}
+.card2{
+  width: 85%;height: 20%;
+}
+.hotbook1{
+  color: black;
+  white-space:nowrap; /*禁止换行*/
+  text-overflow:ellipsis; /*文本超出隐藏*/
+  -o-text-overflow:ellipsis;/*跟上面一样，只是为了兼容其他浏览器*/
+  overflow: hidden; /*隐藏，跟text-overflow配合使用*/
+}
+.hotbook2{
+  font-size: xx-small;
+  text-align: left;
+  height: auto;
+  text-overflow:ellipsis; /*文本超出隐藏*/
+  -o-text-overflow:ellipsis;/*跟上面一样，只是为了兼容其他浏览器*/
+  overflow: hidden; /*隐藏，跟text-overflow配合使用*/
+}
+.vipbookname{
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 20px;
+  width: 180px;
+  font-size: medium;
+  font-weight: bold;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  overflow: hidden;
+}
+.vipbook{
+  margin-left: 10px;
+  margin-top: 5px;
+  height: 20px;
+  width: 240px;
+  white-space:nowrap; /*禁止换行*/
+  text-overflow:ellipsis; /*文本超出隐藏*/
+  -o-text-overflow:ellipsis;/*跟上面一样，只是为了兼容其他浏览器*/
+  overflow: hidden; /*隐藏，跟text-overflow配合使用*/
+}
+.vipuser{
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 60px;
+  color: #989aa2;
+  font-size: 14px;
+  white-space:nowrap; /*禁止换行*/
+  text-overflow:ellipsis; /*文本超出隐藏*/
+  -o-text-overflow:ellipsis;/*跟上面一样，只是为了兼容其他浏览器*/
+  overflow: hidden; /*隐藏，跟text-overflow配合使用*/
+  display: inline-block;/*行内块元素*/
+}
+.viptab{
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+  font-size: 14px;
+  color: #989aa2;
+}
+.vipsorce{
+  margin-right: 10px;
+  margin-top: 10px;
+  float: right;
+  font-weight: bold;
+  font-size: 14px;
+  color: orangered;
+}

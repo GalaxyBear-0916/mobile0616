@@ -31,7 +31,11 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
+            "styles": [
+              "node_modules/ng-zorro-antd-mobile/src/ng-zorro-antd-mobile.min.css",
+              "src/theme/variables.scss",
+              "src/global.scss"
+            ],
             "scripts": [],
             "aot": false,
             "vendorChunk": true,
@@ -97,7 +101,9 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "styles": [],
+            "styles": [
+              "node_modules/ng-zorro-antd-mobile/src/ng-zorro-antd-mobile.min.css"
+            ],
             "scripts": [],
             "assets": [
               {
@@ -171,6 +177,7 @@
     }
   },
   "cli": {
+    "analytics": "5631743e-9e69-450e-84f3-6b3df76a3a52",
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {
