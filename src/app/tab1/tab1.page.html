@@ -28,100 +28,137 @@
       </WingBlank>
       <!--分类-->
       <Flex [justify]="'between'">
-        <button class="placeholder inline" *ngFor="let item of tabList">
-          {{item}}
+
+        <button (click)="tabClick(item.id)" class="placeholder inline" *ngFor="let item of tabList">
+          {{item.name}}
         </button>
       </Flex>
     </div>
     <br />
 
-        <!--好书推荐-->
-        <div class="div1">
-            <!--标题-->
-            <div class="div2">
-                <span class="span1">好书推荐</span>
-                <span style="float: right">更多</span>
-            </div>
-            <!--内容-->
-            <div>
-                <Flex>
-                    <FlexItem *ngFor="let item of goodBookList">
-                        <div>
-                            <div class="imgscenter">
-                                <img class="imgs" src="{{item.img}}">
-                            </div>
-                            <div class="imgscenter">
-                                <span style="margin: auto">{{item.name}}</span>
-                            </div>
-                        </div>
-                    </FlexItem>
-                </Flex>
-            </div>
-        </div>
-        <br>
+    <div style="text-align: center" *ngIf="tabnumber">
+      {{obj.age}}
+      {{obj.name}}
+    </div>
 
-        <!--会员专享-->
-        <div class="div1">
-            <!--标题-->
-            <div class="div2">
-                <span class="span1">会员专享</span>
-                <span style="float: right">更多</span>
-            </div>
-            <!--内容-->
-            <div *ngFor="let item of divList; index as i">
-                <div>
-                    <Flex>
-                        <Card class="card">
-                            <CardHeader [thumb]="item.img">
-                            </CardHeader>
-                        </Card>
-                        <Card class="card2">
-                            <div>
-                                <div class="vipbookname">{{item.title}}</div>
-                            </div>
-                            <div>
-                                <div class="vipbook">{{item.desc}}</div>
-                            </div>
-                            <div>
-                                <div class="vipuser">{{item.aaa}}</div>
-                                <div class="viptab">{{item.type}}</div>
-                                <div class="vipsorce">{{item.price}}</div>
-                            </div>
-                        </Card>
-                    </Flex>
-                </div>
-                <br>
-            </div>
-        </div>
-        <br>
+          <ng-container style="">
+              <!--好书推荐-->
+              <div class="div1">
+                  <!--标题-->
+                  <div class="div2">
+                      <span class="span1">好书推荐</span>
+                      <span style="float: right">更多</span>
+                  </div>
+                  <!--内容-->
+                  <div>
+                      <Flex>
+                          <FlexItem *ngFor="let item of goodBookList">
+                              <div>
+                                  <div class="imgscenter">
+                                      <img class="imgs" src="{{item.img}}">
+                                  </div>
+                                  <div class="imgscenter">
+                                      <span style="margin: auto">{{item.name}}</span>
+                                  </div>
+                              </div>
+                          </FlexItem>
+                      </Flex>
+                  </div>
+              </div>
+              <br>
+          </ng-container>
 
-        <!--掌上热搜榜-->
-        <div class="div1">
-            <!--标题-->
-            <div class="div2">
-                <span class="span1">掌上热搜榜</span>
-                <span style="float: right">更多</span>
-            </div>
-            <!--内容-->
-          <div class="flex-container" *ngFor=" let item of hotBook">
-                <Flex>
-                    <FlexItem *ngFor="let i of item">
-                        <WingBlank [size]="'lg'" >
-                            <Card>
-                                <CardHeader [extra]="extra2" [thumb]=i.img [thumbStyle]="thumbStyle">
-                                </CardHeader>
-                                <ng-template #extra2>
-                                    <span class="hotbook1" style="float: left">{{i.name}}</span>
-                                    <span class="hotbook2" style="float: left">{{i.span}}</span>
-                                </ng-template>
-                            </Card>
-                        </WingBlank>
-                    </FlexItem>
-                </Flex>
-                <br/>
-            </div>
-        </div>
-        <br>
+
+    <ng-container>
+<!--        &lt;!&ndash;好书推荐&ndash;&gt;-->
+<!--        <div class="div1">-->
+<!--            &lt;!&ndash;标题&ndash;&gt;-->
+<!--            <div class="div2">-->
+<!--                <span class="span1">好书推荐</span>-->
+<!--                <span style="float: right">更多</span>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;内容&ndash;&gt;-->
+<!--            <div>-->
+<!--                <Flex>-->
+<!--                    <FlexItem *ngFor="let item of goodBookList">-->
+<!--                        <div>-->
+<!--                            <div class="imgscenter">-->
+<!--                                <img class="imgs" src="{{item.img}}">-->
+<!--                            </div>-->
+<!--                            <div class="imgscenter">-->
+<!--                                <span style="margin: auto">{{item.name}}</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </FlexItem>-->
+<!--                </Flex>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br>-->
+
+<!--        &lt;!&ndash;会员专享&ndash;&gt;-->
+<!--        <div class="div1">-->
+<!--            &lt;!&ndash;标题&ndash;&gt;-->
+<!--            <div class="div2">-->
+<!--                <span class="span1">会员专享</span>-->
+<!--                <span style="float: right">更多</span>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;内容&ndash;&gt;-->
+<!--            <div *ngFor="let item of divList; index as i">-->
+<!--                <div>-->
+<!--                    <Flex>-->
+<!--                        <Card class="card">-->
+<!--                            <CardHeader [thumb]="item.img">-->
+<!--                            </CardHeader>-->
+<!--                        </Card>-->
+<!--                        <Card class="card2">-->
+<!--                            <div>-->
+<!--                                <div class="vipbookname">{{item.title}}</div>-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <div class="vipbook">{{item.desc}}</div>-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <div class="vipuser">{{item.aaa}}</div>-->
+<!--                                <div class="viptab">{{item.type}}</div>-->
+<!--                                <div class="vipsorce">{{item.price}}</div>-->
+<!--                            </div>-->
+<!--                        </Card>-->
+<!--                    </Flex>-->
+<!--                </div>-->
+<!--                <br>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br>-->
+
+<!--        &lt;!&ndash;掌上热搜榜&ndash;&gt;-->
+<!--        <div class="div1">-->
+<!--            &lt;!&ndash;标题&ndash;&gt;-->
+<!--            <div class="div2">-->
+<!--                <span class="span1">掌上热搜榜</span>-->
+<!--                <span style="float: right">更多</span>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;内容&ndash;&gt;-->
+<!--          <div class="flex-container" *ngFor=" let item of hotBook">-->
+<!--                <Flex>-->
+<!--                    <FlexItem *ngFor="let i of item">-->
+<!--                        <WingBlank [size]="'lg'" >-->
+<!--                            <Card>-->
+<!--                                <CardHeader [extra]="extra2" [thumb]=i.img [thumbStyle]="thumbStyle">-->
+<!--                                </CardHeader>-->
+<!--                                <ng-template #extra2>-->
+<!--                                    <span class="hotbook1" style="float: left">{{i.name}}</span>-->
+<!--                                    <span class="hotbook2" style="float: left">{{i.span}}</span>-->
+<!--                                </ng-template>-->
+<!--                            </Card>-->
+<!--                        </WingBlank>-->
+<!--                    </FlexItem>-->
+<!--                </Flex>-->
+<!--                <br/>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br>-->
+    </ng-container>
+
 
     </div>
 </ion-content>

@@ -51,7 +51,22 @@ export class Tab1Page{
     '推荐','VIP','畅销','男生','女生','儿童','相声','历史','人文','励志',
   ];
   tabList=[
-    '最新','排行榜','活动','免费'
+    {
+      name:'最新',
+      id:1
+    },
+    {
+      name:'排行榜',
+      id:2
+    },
+    {
+      name:'活动',
+      id:3
+    },
+    {
+      name:'免费',
+      id:4
+    }
   ];
   goodBookList=[
     {
@@ -117,6 +132,17 @@ export class Tab1Page{
       },
     ]
   ];
+  dataar = {
+    1: {name:'1111',age:'aaaa'},
+    2: {name:'2222',age:'bbbb'},
+    3: {name:'3333',age:'cccc'},
+    4: {name:'4444',age:'dddd'}
+  };
+  obj={
+    name: Object,
+    age: Object
+  };
+  private tabnumber: number;
   constructor(private _element: ElementRef, private _renderer: Renderer2) {}
 
   change($event) {
@@ -153,4 +179,8 @@ export class Tab1Page{
     };
   }
 
+  tabClick(id: number) {
+    this.obj=this.dataar[id];
+    this.tabnumber = id;
+  }
 }
